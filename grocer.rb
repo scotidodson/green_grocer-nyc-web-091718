@@ -49,7 +49,7 @@ def checkout(cart, coupons)
   
   clearance_cart.each do |item, item_info|
     item_total = clearance_cart[:price] * clearance_cart[:count]).round(2)
-    puts item_totaltotal
+    puts item_total
     binding.pry 
   end
 end
