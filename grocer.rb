@@ -52,5 +52,6 @@ def checkout(cart, coupons)
     #item_total = clearance_cart[:price] * clearance_cart[:count]
     puts clearance_cart[item_info][:price]
     binding.pry 
+  end 
   end
 end
