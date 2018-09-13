@@ -48,10 +48,8 @@ def checkout(cart, coupons)
   total = 0
   
   clearance_cart.each do |item, item_info|
-    item_info.each do |key, value|
-    item_total = clearance_cart[item][:price] * clearance_cart[item][:count]
+    item_total = item_info[:price] * clearance_cart[item][:count]
     total += item_total
-    end 
   end 
   
   if total > 100.00 
