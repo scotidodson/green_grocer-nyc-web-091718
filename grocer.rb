@@ -43,11 +43,8 @@ end
 
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
-  puts consolidate_cart
   saver_cart = apply_coupons(consolidated_cart, coupons)
-  puts saver_cart
   clearance_cart = apply_clearance(saver_cart)
-  puts clearance_cart
   total = 0
   
   clearance_cart.each do |item, item_info|
