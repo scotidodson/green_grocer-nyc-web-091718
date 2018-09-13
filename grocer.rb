@@ -61,5 +61,4 @@ def checkout(cart, coupons)
     cart_total = total.round(2)
     puts "Your total is $#{cart_total}."
   end
-    binding.pry 
 end
