@@ -56,9 +56,10 @@ def checkout(cart, coupons)
   
   if total > 100.00 
       cart_total = (total * 0.9).round(2)
-      return "Your total is $#{cart_total}."
+      puts "Your total is $#{cart_total}."
   else 
     cart_total = total.round(2)
-    "Your total is $#{cart_total}."
+    puts "Your total is $#{cart_total}."
+  end
     binding.pry 
 end
